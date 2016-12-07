@@ -1,0 +1,5 @@
+1 - Twitter Language;
+
+@Tag Film name. -> return Defaulty imdb rating infos and imdb link
+
+@Tag Film name. plot. actors. genre -> return this infos

@@ -1,0 +1,5 @@
+D:\Ayb\MovieInformative\MovieInformative\Api.Models\bin\Debug\Api.Models.dll
+D:\Ayb\MovieInformative\MovieInformative\Api.Models\bin\Debug\Api.Models.pdb
+D:\Ayb\MovieInformative\MovieInformative\Api.Models\obj\Debug\Api.Models.csprojResolveAssemblyReference.cache
+D:\Ayb\MovieInformative\MovieInformative\Api.Models\obj\Debug\Api.Models.dll
+D:\Ayb\MovieInformative\MovieInformative\Api.Models\obj\Debug\Api.Models.pdb
