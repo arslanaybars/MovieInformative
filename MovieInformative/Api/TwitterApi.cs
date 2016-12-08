@@ -39,13 +39,13 @@ namespace Api
 
                 if (tweet.Text.Contains('.'))
                 {
-                    var t = tweet.Text.Trim().Replace('@' + user.ScreenName, string.Empty);
-                    var title = t.Split('.')[0];
+                    //var t = tweet.Text.Trim().Replace('@' + user.ScreenName, string.Empty);
+                    var title = tweet.Text.Trim().Split('.')[0];
 
                     response.Add(new TweetResponseModel
                     {
                         MovieTitle = title,
-                        To = '@' + tweet.CreatedBy.ScreenName,
+                        To = tweet.InReplyToUserId,
                         status = true
                     });
 
@@ -62,9 +62,9 @@ namespace Api
             return true;
         }
 
-        public bool SendTweetInReply(string tweet)
+        public bool SendTweetInReply(string tweet, long id)
         {
-            var t = Tweet.PublishTweet(tweet);
+            var t = Tweet.PublishTweetInReplyTo(tweet, );
 
             return true;
         }

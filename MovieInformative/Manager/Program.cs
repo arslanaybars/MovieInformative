@@ -21,14 +21,14 @@ namespace Manager
             {
                 var info = omdbApi.GetByQuery(item.MovieTitle);
 
-                var tweet = item.To + ", ImdbRating : " + info.imdbRating + ", Summary : " + info.Plot;
+                var tweet = ", ImdbRating : " + info.imdbRating + ", Summary : " + info.Plot;
 
                 if (tweet.Length > 140)
                 {
                     tweet = tweet.Substring(0, 138) + "..";
                 }
 
-                var send = twitterApi.SendTweetInReply(tweet);
+                var send = twitterApi.SendTweetInReply(tweet, item.To);
             }
 
         }

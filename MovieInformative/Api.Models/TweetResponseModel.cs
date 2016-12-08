@@ -10,7 +10,7 @@ namespace Api.Models
     {
         public string MovieTitle { get; set; }
 
-        public string To { get; set; }
+        public long To { get; set; }
 
         public bool status { get; set; } = false;
     }
