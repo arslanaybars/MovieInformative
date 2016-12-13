@@ -82,7 +82,7 @@ namespace Manager
             string plot = "*Summary : " + info.Plot;
             if (info.Plot.Length > 126 - item.ScreenName.Length)
             {
-                plot = " *Plot : " + info.Plot.Substring(0, 126 - item.ScreenName.Length) + "..";
+                plot = "* Plot : " + info.Plot.Substring(0, 126 - item.ScreenName.Length) + "..";
             }
             tweet.Append(plot);
             return tweet;
