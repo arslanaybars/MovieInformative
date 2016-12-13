@@ -10,8 +10,10 @@ namespace Api.Models
     {
         public string MovieTitle { get; set; }
 
-        public long To { get; set; }
+        public long? TweetId { get; set; }
 
-        public bool status { get; set; } = false;
+        public string ScreenName { get; set; }
+
+        public bool Status { get; set; } = false;
     }
 }

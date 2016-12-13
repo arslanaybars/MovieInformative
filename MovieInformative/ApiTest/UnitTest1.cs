@@ -19,7 +19,14 @@ namespace ApiTEst
         [TestMethod]
         public void SendTweet()
         {
-            var sampleFilm = new TwitterApi().SendTweetInReply("Amélie");
+            var sampleFilm = new TwitterApi().SendTweet("Amélie");
+            var imdbRating = "";
+        }
+
+        [TestMethod]
+        public void SendTweetReply()
+        {
+            var sampleFilm = new TwitterApi().SendTweetInReply("Amélie", 271676309);
             var imdbRating = "";
         }
 

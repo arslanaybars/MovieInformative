@@ -45,8 +45,9 @@ namespace Api
                     response.Add(new TweetResponseModel
                     {
                         MovieTitle = title,
-                        To = tweet.InReplyToUserId,
-                        status = true
+                        TweetId = tweet.Id,
+                        Status = true,
+                        ScreenName = tweet.CreatedBy.ScreenName
                     });
 
                 }
@@ -64,9 +65,12 @@ namespace Api
 
         public bool SendTweetInReply(string tweet, long id)
         {
-            var t = Tweet.PublishTweetInReplyTo(tweet, );
 
+            var t = Tweet.PublishTweetInReplyTo(tweet, id);
+            // todo t'nin durumuna göre döndür
             return true;
         }
+
+        
     }
 }
